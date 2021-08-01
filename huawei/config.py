@@ -25,8 +25,8 @@ offset_a = -0.5
 offset_b = 1.5
 extra_load = 1.0 # watts this is a permanent load not measured by the smart meter
 # 1W represents 0.72 kWh a month. Adjust this to refflect your offset
-latitude = 47.28 # Example: 12.34
-longitude = 19.11 # Example: 12.34
+latitude = 10.00 # Example: 12.34
+longitude = 10.00 # Example: 12.34
 forecast_capacity = 10 # in kW
 tilt = 60 # Rooftop tilt
 azimuth = 206   # Heading of panels (0 - north, 90 - east, 180 - south, 270 - west)
