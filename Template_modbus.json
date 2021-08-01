@@ -1,0 +1,1561 @@
+{
+    "zabbix_export": {
+        "version": "5.4",
+        "date": "2021-07-29T14:03:50Z",
+        "groups": [
+            {
+                "uuid": "7df96b18c230490a9a0a9e2307226338",
+                "name": "Templates"
+            },
+            {
+                "uuid": "57b7ae836ca64446ba2c296389c009b7",
+                "name": "Templates/Modules"
+            }
+        ],
+        "templates": [
+            {
+                "uuid": "2b8e0aeadaa94b99867a86870190fa0c",
+                "template": "Template Huawei Solar Inverter - ModBus",
+                "name": "Template Huawei Solar Inverter - ModBus",
+                "groups": [
+                    {
+                        "name": "Templates"
+                    },
+                    {
+                        "name": "Templates/Modules"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "c81f9cd00dc8422092f49a0685b14aba",
+                        "name": "Model ID",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30070",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Model ID"
+                        }
+                    },
+                    {
+                        "uuid": "106d4ebe10ad4cc1ae357d18f462d1cb",
+                        "name": "Number of strings supported",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30071",
+                        "delay": "0"
+                    },
+                    {
+                        "uuid": "0a9892ec639243868fbef32bfbf1c5c8",
+                        "name": "MPTT number",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30072",
+                        "delay": "0"
+                    },
+                    {
+                        "uuid": "d751baca6a9c47399f85f0e3ceff8c60",
+                        "name": "Rated power",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30073",
+                        "delay": "0",
+                        "units": "W"
+                    },
+                    {
+                        "uuid": "66e0c752e27745acbc1880e1211ff7e2",
+                        "name": "Maximum active power",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30075",
+                        "delay": "0",
+                        "units": "W"
+                    },
+                    {
+                        "uuid": "90962c4862954af391c83a1203df5545",
+                        "name": "Maximum apparent power",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30077",
+                        "delay": "0",
+                        "units": "VA"
+                    },
+                    {
+                        "uuid": "2ded7e92cc28434dbfa125ff826145f4",
+                        "name": "Maximum reactive power to grid",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30079",
+                        "delay": "0",
+                        "units": "VA"
+                    },
+                    {
+                        "uuid": "1c058b9f9b0c4dfaa19f5e4d7b98cd74",
+                        "name": "Maximum reactive power from grid",
+                        "type": "TRAP",
+                        "key": "sun2000.register-30081",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "VA"
+                    },
+                    {
+                        "uuid": "6657a061dc1f42a289acf1a333612c36",
+                        "name": "Status 1",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32000",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Status 1"
+                        }
+                    },
+                    {
+                        "uuid": "b319a7ff7a2c438988457aee714e7562",
+                        "name": "Status 2",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32002",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Status 2"
+                        }
+                    },
+                    {
+                        "uuid": "5dd1cb5ce31f4fc081e6d13979a675f1",
+                        "name": "Status 3",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32003",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Status 3"
+                        }
+                    },
+                    {
+                        "uuid": "6340d935c7e64babb0605858b96276e9",
+                        "name": "Alarm 1",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32008",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Alarm 1"
+                        },
+                        "triggers": [
+                            {
+                                "uuid": "2171831adb3b454db720746ccd813b0c",
+                                "expression": "last(/Template Huawei Solar Inverter - ModBus/sun2000.register-32008)<>0",
+                                "name": "Alarm1",
+                                "priority": "WARNING"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "63f48f8b2e11446f9e355d7aad2bc54f",
+                        "name": "Alarm 2",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32009",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Alarm 2"
+                        },
+                        "triggers": [
+                            {
+                                "uuid": "caeaa77cfe2a4d9f88608df883e7f541",
+                                "expression": "last(/Template Huawei Solar Inverter - ModBus/sun2000.register-32009)<>0",
+                                "name": "Alarm2",
+                                "priority": "WARNING"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "178d8b94e0474f7a944226b99675a4a9",
+                        "name": "Alarm 3",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32010",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Alarm 3"
+                        },
+                        "triggers": [
+                            {
+                                "uuid": "cf199d0034a94a6a935b41cf037b39e1",
+                                "expression": "last(/Template Huawei Solar Inverter - ModBus/sun2000.register-32010)<>0",
+                                "name": "Alarm3",
+                                "priority": "WARNING"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4939ee8fb4974e1a9edcca2720e453c2",
+                        "name": "PV1 input voltage (DC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32016",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "V",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.1"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "5098691c44564ab499415841778ffdca",
+                        "name": "PV1 input current (DC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32017",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "A",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.01"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "ad009b6448594e6aa6cfb06b6eee4ede",
+                        "name": "PV2 input voltage (DC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32018",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "V",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.1"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a009723c72784c868f93feb35c6eb972",
+                        "name": "PV2 input current (DC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32019",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "A",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.01"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "e9ac24ea937a46498db9178e22bd307f",
+                        "name": "Input power (DC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32064",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "W"
+                    },
+                    {
+                        "uuid": "666d865deafc4303badd2ad64e1f9539",
+                        "name": "Line voltage (AC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32066",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "V",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.1"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "c70244eb98974e368065e32a7376729c",
+                                "expression": "min(/Template Huawei Solar Inverter - ModBus/sun2000.register-32066,2)>=253",
+                                "name": "Line voltage is too high",
+                                "priority": "AVERAGE",
+                                "description": "Check with power supplier!"
+                            },
+                            {
+                                "uuid": "d6e031d2f7334d10a44fbd1689bc32f2",
+                                "expression": "min(/Template Huawei Solar Inverter - ModBus/sun2000.register-32066,2)<=213",
+                                "name": "Line voltage is too low",
+                                "priority": "AVERAGE",
+                                "description": "Check with power supplier!"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "e0ac0fc359a34683a090a47d96ffe901",
+                        "name": "Phase voltage (AC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32069",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "V",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.1"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "29b9766b74764707a563d52ad6089fe9",
+                        "name": "Phase current (AC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32072",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "A",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.001"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "21029cb65f5947c4914a56a31ccf4ebc",
+                        "name": "Active power - daily peak (AC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32078",
+                        "delay": "0",
+                        "units": "W"
+                    },
+                    {
+                        "uuid": "6b8b2b44fd8342cdb020c5fc601c9e0b",
+                        "name": "Active power (AC)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32080",
+                        "delay": "0",
+                        "units": "W"
+                    },
+                    {
+                        "uuid": "c62dff59a4dd444885705c238aab87e1",
+                        "name": "Reactive power",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32082",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "VA"
+                    },
+                    {
+                        "uuid": "0f33ba757a774ee893dc682cf1aaee83",
+                        "name": "Power factor",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32084",
+                        "delay": "0",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.001"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4cc70a38b9314930b77c6c53016cbfa4",
+                        "name": "Grid frequency",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32085",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "Hz",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.01"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "ffefa5ec4597418ca494eb14c3497f4e",
+                                "expression": "min(/Template Huawei Solar Inverter - ModBus/sun2000.register-32085,2)>=50.2",
+                                "name": "Grid frequency is too high",
+                                "priority": "AVERAGE",
+                                "description": "Check with power supplier!"
+                            },
+                            {
+                                "uuid": "bf17e864263441b88e5c76c88130472d",
+                                "expression": "min(/Template Huawei Solar Inverter - ModBus/sun2000.register-32085,2)<=49.8",
+                                "name": "Grid frequency is too low",
+                                "priority": "AVERAGE",
+                                "description": "Check with power supplier!"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "7b91128f16ff44a9ab483c919e8852b5",
+                        "name": "Efficiency",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32086",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "%",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.01"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "57a80edf6afc4dc7b3d479c26d095bc7",
+                        "name": "Internal temperature",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32087",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "C",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.1"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "c31e51c61c924e418c5dc3760beeb633",
+                                "expression": "last(/Template Huawei Solar Inverter - ModBus/sun2000.register-32087)>60",
+                                "name": "Internal temperature is high",
+                                "priority": "AVERAGE"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "fd9c57b9ba8545a895ee236b762ed5b9",
+                        "name": "Insulation resistance",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32088",
+                        "delay": "0",
+                        "units": "Ohm",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "1000"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "5ac3a6772aa24e08b989c7f2b4e985f6",
+                        "name": "Device status",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32089",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Device status"
+                        }
+                    },
+                    {
+                        "uuid": "4e1612aa3756402c8947034dca52a471",
+                        "name": "Fault code",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32090",
+                        "delay": "0"
+                    },
+                    {
+                        "uuid": "d2b782eab67a472eb7fa81e1d7137be8",
+                        "name": "Time of last startup",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32091",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR"
+                    },
+                    {
+                        "uuid": "0c6af65f49914c269551076c8e63c12a",
+                        "name": "Time of last shutdown",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32093",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR"
+                    },
+                    {
+                        "uuid": "8efacfab0ea5444c8283304efb683419",
+                        "name": "Accumulated energy yield",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32106",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "Wh",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "10"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "20b913e04d86436da8e56edb3221fcba",
+                                "expression": "nodata(/Template Huawei Solar Inverter - ModBus/sun2000.register-32106,10m)=1",
+                                "name": "No data from inverter",
+                                "priority": "HIGH"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "1b762b7812194589adb9d9efd9ef128c",
+                        "name": "Daily energy yield",
+                        "type": "TRAP",
+                        "key": "sun2000.register-32114",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "Wh",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "10"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "6db1d2f531644fb89d04285e27519dd2",
+                        "name": "Current time",
+                        "type": "TRAP",
+                        "key": "sun2000.register-40000",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR"
+                    },
+                    {
+                        "uuid": "13bf36ca80c140c8be06b7949070a553",
+                        "name": "Reactive power compensation (Q/S)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-40123",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.001"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "944539635b0f4521a5c363146b84b5a5",
+                        "name": "Active power derating (%)",
+                        "type": "TRAP",
+                        "key": "sun2000.register-40125",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "%",
+                        "preprocessing": [
+                            {
+                                "type": "MULTIPLIER",
+                                "parameters": [
+                                    "0.1"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "21c42f985f3341ca9efe82ff98dffcf7",
+                                "expression": "last(/Template Huawei Solar Inverter - ModBus/sun2000.register-40125)<>100",
+                                "name": "Inverter is derating",
+                                "priority": "WARNING",
+                                "description": "Derating is the controlled reduction of the inverter power. In normal operation, inverters operate at their maximumpower point. Temperature derating occurs when the inverter reduces its power in order to protect components from overheating."
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "c41d5b08ff4d486798d9ca5ce2a666ea",
+                        "name": "Active power derating",
+                        "type": "TRAP",
+                        "key": "sun2000.register-40126",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "units": "W"
+                    },
+                    {
+                        "uuid": "217fe3909d3346f4921972ffcc81cc94",
+                        "name": "Power on",
+                        "type": "TRAP",
+                        "key": "sun2000.register-40200",
+                        "delay": "0",
+                        "value_type": "FLOAT"
+                    },
+                    {
+                        "uuid": "948a38c115924a008f4b48859d335bad",
+                        "name": "Power off",
+                        "type": "TRAP",
+                        "key": "sun2000.register-40201",
+                        "delay": "0",
+                        "value_type": "FLOAT"
+                    },
+                    {
+                        "uuid": "6f5deefc237e4aee81bde4eb77c74359",
+                        "name": "Time zone",
+                        "type": "TRAP",
+                        "key": "sun2000.register-43006",
+                        "delay": "0",
+                        "value_type": "FLOAT",
+                        "valuemap": {
+                            "name": "Time zone"
+                        }
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$MODBUS_PORT}",
+                        "value": "502"
+                    },
+                    {
+                        "macro": "{$MODBUS_SLAVE}",
+                        "value": "0"
+                    }
+                ],
+                "valuemaps": [
+                    {
+                        "uuid": "df452c1999a74e0f8424f6780c3050b9",
+                        "name": "Alarm 1",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "OK"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "High String Voltage"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2-3",
+                                "newvalue": "DC Arc Fault"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4-7",
+                                "newvalue": "String Reversed"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8-15",
+                                "newvalue": "String Backfeed"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "16-31",
+                                "newvalue": "Abnormal String Power"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "32-63",
+                                "newvalue": "AFCI Self-test Fail"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "64-127",
+                                "newvalue": "Short circuit between phase to PE"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "128-255",
+                                "newvalue": "Grid Loss"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "256-511",
+                                "newvalue": "Grid Undervoltage"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "512-1023",
+                                "newvalue": "Grid Overvoltage"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "1024-2047",
+                                "newvalue": "Unbalanced Grid Voltage"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2048-4095",
+                                "newvalue": "Grid Overfrequency"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4096-8191",
+                                "newvalue": "Grid UnderFrequency"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8192-16383",
+                                "newvalue": "Unstable Grid Frequency"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "16384-32767",
+                                "newvalue": "Output Overcurrent"
+                            },
+                            {
+                                "type": "GREATER_OR_EQUAL",
+                                "value": "32768",
+                                "newvalue": "Output DC Component Overhigh"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "ee6b99547a984df6bfeb0faad872a17a",
+                        "name": "Alarm 2",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "OK"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "Abnormal Residual Current"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2-3",
+                                "newvalue": "Abnormal Grounding"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4-7",
+                                "newvalue": "Low Insulation Resistance"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8-15",
+                                "newvalue": "Overtemperature"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "16-31",
+                                "newvalue": "Device Fault"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "32-63",
+                                "newvalue": "Upgrade Failed or Version Mismatch"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "64-127",
+                                "newvalue": "License Expired"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "128-255",
+                                "newvalue": "Faulty Monitoring Unit"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "256-511",
+                                "newvalue": "Faulty Power Collector"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "512-1023",
+                                "newvalue": "Battery Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "1024-2047",
+                                "newvalue": "Active Islanding"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2048-4095",
+                                "newvalue": "Passive Islanding"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4096-8191",
+                                "newvalue": "Transient AC Overvoltage"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8192-16383",
+                                "newvalue": "Peripheral Port Short Circuit"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "16384-32767",
+                                "newvalue": "Churn Output Overload"
+                            },
+                            {
+                                "type": "GREATER_OR_EQUAL",
+                                "value": "32768",
+                                "newvalue": "Abnormal PV Module Configuration"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "df1dcf9f52f845fda438384a2f455a97",
+                        "name": "Alarm 3",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "OK"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "Optimizer Fault"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2-3",
+                                "newvalue": "Built-in PID Operation Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4-7",
+                                "newvalue": "High Input String Voltage to Ground"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8-15",
+                                "newvalue": "External Fan Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "16-31",
+                                "newvalue": "Battery Reverse Connection"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "32-63",
+                                "newvalue": "On-grid/Off-grid Controller Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "64-127",
+                                "newvalue": "PV String Loss"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "128-255",
+                                "newvalue": "Internal Fan Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "256-511",
+                                "newvalue": "DC Protection Unit Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "512-1023",
+                                "newvalue": "DC Protection Unit Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "1024-2047",
+                                "newvalue": "EL Unit Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2048-4095",
+                                "newvalue": "Active Adjustment Instruction Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4096-8191",
+                                "newvalue": "Reactive Adjustment Instruction Abnormal"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8192-16383",
+                                "newvalue": "CT Wiring Abnormal"
+                            },
+                            {
+                                "type": "GREATER_OR_EQUAL",
+                                "value": "16384",
+                                "newvalue": "DC Arc Fault (ADMC Alarm to be clear manually)"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "8303c310d35b459e94564c608f9ba901",
+                        "name": "Device status",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "Standby: initializing"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "Standby: detecting insulation resistance"
+                            },
+                            {
+                                "value": "2",
+                                "newvalue": "Standby: detecting irradiation"
+                            },
+                            {
+                                "value": "3",
+                                "newvalue": "Standby: grid detecting"
+                            },
+                            {
+                                "value": "256",
+                                "newvalue": "Starting"
+                            },
+                            {
+                                "value": "512",
+                                "newvalue": "On-Grid (In Off-Grid mode: running)"
+                            },
+                            {
+                                "value": "513",
+                                "newvalue": "Grid connection: power limited (Off-grid mode: running: power li"
+                            },
+                            {
+                                "value": "514",
+                                "newvalue": "Grid connection: self-derating (Off-grid mode: running: self-der"
+                            },
+                            {
+                                "value": "768",
+                                "newvalue": "Shutdown: fault"
+                            },
+                            {
+                                "value": "769",
+                                "newvalue": "Shutdown: command"
+                            },
+                            {
+                                "value": "770",
+                                "newvalue": "Shutdown: OVGR"
+                            },
+                            {
+                                "value": "771",
+                                "newvalue": "Shutdown: communication disconnected"
+                            },
+                            {
+                                "value": "772",
+                                "newvalue": "Shutdown: power limited"
+                            },
+                            {
+                                "value": "773",
+                                "newvalue": "Shutdown: manual startup required"
+                            },
+                            {
+                                "value": "774",
+                                "newvalue": "Shutdown: DC switches disconnected"
+                            },
+                            {
+                                "value": "775",
+                                "newvalue": "Shutdown: rapid cutoff"
+                            },
+                            {
+                                "value": "776",
+                                "newvalue": "Shutdown: input underpower"
+                            },
+                            {
+                                "value": "1025",
+                                "newvalue": "Grid scheduling: cos F-P curve"
+                            },
+                            {
+                                "value": "1026",
+                                "newvalue": "Grid scheduling: Q-U curve"
+                            },
+                            {
+                                "value": "1027",
+                                "newvalue": "Grid scheduling: PF-U curve"
+                            },
+                            {
+                                "value": "1028",
+                                "newvalue": "Grid scheduling: dry contact"
+                            },
+                            {
+                                "value": "1029",
+                                "newvalue": "Grid scheduling: Q-P curve"
+                            },
+                            {
+                                "value": "1280",
+                                "newvalue": "Spot-check ready"
+                            },
+                            {
+                                "value": "1281",
+                                "newvalue": "Spot-checking"
+                            },
+                            {
+                                "value": "1536",
+                                "newvalue": "Inspecting"
+                            },
+                            {
+                                "value": "1792",
+                                "newvalue": "AFCI self check"
+                            },
+                            {
+                                "value": "2048",
+                                "newvalue": "I-V scanning"
+                            },
+                            {
+                                "value": "2304",
+                                "newvalue": "DC input detection"
+                            },
+                            {
+                                "value": "2560",
+                                "newvalue": "Running: off-grid charging"
+                            },
+                            {
+                                "value": "40960",
+                                "newvalue": "Standby: no irradiation"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4754e1bd0caf48f6b78e697ff372f23a",
+                        "name": "Model ID",
+                        "mappings": [
+                            {
+                                "value": "348",
+                                "newvalue": "SUN2000-3KTL-L1"
+                            },
+                            {
+                                "value": "400",
+                                "newvalue": "SUN2000-5KTL-M0"
+                            },
+                            {
+                                "value": "401",
+                                "newvalue": "SUN2000-5KTL-M0"
+                            },
+                            {
+                                "value": "402",
+                                "newvalue": "SUN2000-6KTL-M0"
+                            },
+                            {
+                                "value": "403",
+                                "newvalue": "SUN2000-6KTL-M0"
+                            },
+                            {
+                                "value": "404",
+                                "newvalue": "SUN2000-8KTL-M0"
+                            },
+                            {
+                                "value": "405",
+                                "newvalue": "SUN2000-8KTL-M0"
+                            },
+                            {
+                                "value": "406",
+                                "newvalue": "SUN2000-10KTL-M0"
+                            },
+                            {
+                                "value": "407",
+                                "newvalue": "SUN2000-10KTL-M0"
+                            },
+                            {
+                                "value": "408",
+                                "newvalue": "SUN2000-12KTL-M0"
+                            },
+                            {
+                                "value": "410",
+                                "newvalue": "SUN2000-3KTL-M0"
+                            },
+                            {
+                                "value": "411",
+                                "newvalue": "SUN2000-4KTL-M0"
+                            },
+                            {
+                                "value": "338",
+                                "newvalue": "SUN2000-2KTL-L0"
+                            },
+                            {
+                                "value": "349",
+                                "newvalue": "SUN2000-2KTL-L1"
+                            },
+                            {
+                                "value": "334",
+                                "newvalue": "SUN2000-3KTL-CNL0"
+                            },
+                            {
+                                "value": "339",
+                                "newvalue": "SUN2000-3KTL-L0"
+                            },
+                            {
+                                "value": "424",
+                                "newvalue": "SUN2000-3KTL-M1"
+                            },
+                            {
+                                "value": "347",
+                                "newvalue": "SUN2000-3.68KTL-L10"
+                            },
+                            {
+                                "value": "318",
+                                "newvalue": "SUN2000-3.8KTL-USL0"
+                            },
+                            {
+                                "value": "319",
+                                "newvalue": "SUN2000-3.8KTL-USL0"
+                            },
+                            {
+                                "value": "335",
+                                "newvalue": "SUN2000-4KTL-CNL0"
+                            },
+                            {
+                                "value": "340",
+                                "newvalue": "SUN2000-4KTL-L0"
+                            },
+                            {
+                                "value": "346",
+                                "newvalue": "SUN2000-4KTL-L1"
+                            },
+                            {
+                                "value": "425",
+                                "newvalue": "SUN2000-4KTL-M1"
+                            },
+                            {
+                                "value": "345",
+                                "newvalue": "SUN2000-4.6KTL-L1"
+                            },
+                            {
+                                "value": "342",
+                                "newvalue": "SUN2000-4.95KTL-JPL0"
+                            },
+                            {
+                                "value": "350",
+                                "newvalue": "SUN2000-4.95KTL-L1"
+                            },
+                            {
+                                "value": "336",
+                                "newvalue": "SUN2000-5KTL-CNL0"
+                            },
+                            {
+                                "value": "341",
+                                "newvalue": "SUN2000-5KTL-L0"
+                            },
+                            {
+                                "value": "344",
+                                "newvalue": "SUN2000-5KTL-L1"
+                            },
+                            {
+                                "value": "426",
+                                "newvalue": "SUN2000-5KTL-M1"
+                            },
+                            {
+                                "value": "315",
+                                "newvalue": "SUN2000-5KTL-USL0"
+                            },
+                            {
+                                "value": "316",
+                                "newvalue": "SUN2000-5KTL-USL0"
+                            },
+                            {
+                                "value": "337",
+                                "newvalue": "SUN2000-6KTL-CNL0"
+                            },
+                            {
+                                "value": "343",
+                                "newvalue": "SUN2000-6KTL-L1"
+                            },
+                            {
+                                "value": "427",
+                                "newvalue": "SUN2000-6KTL-M1"
+                            },
+                            {
+                                "value": "312",
+                                "newvalue": "SUN2000-7.6KTL-USL0"
+                            },
+                            {
+                                "value": "313",
+                                "newvalue": "SUN2000-7.6KTL-USL0"
+                            },
+                            {
+                                "value": "5",
+                                "newvalue": "SUN2000-8KTL"
+                            },
+                            {
+                                "value": "415",
+                                "newvalue": "SUN2000-8KTL"
+                            },
+                            {
+                                "value": "418",
+                                "newvalue": "SUN2000-8KTL-M0"
+                            },
+                            {
+                                "value": "428",
+                                "newvalue": "SUN2000-8KTL-M1"
+                            },
+                            {
+                                "value": "430",
+                                "newvalue": "SUN2000-8KTL-M2"
+                            },
+                            {
+                                "value": "324",
+                                "newvalue": "SUN2000-9KTL-USL0"
+                            },
+                            {
+                                "value": "325",
+                                "newvalue": "SUN2000-9KTL-USL0"
+                            },
+                            {
+                                "value": "4",
+                                "newvalue": "SUN2000-10KTL"
+                            },
+                            {
+                                "value": "416",
+                                "newvalue": "SUN2000-10KTL"
+                            },
+                            {
+                                "value": "419",
+                                "newvalue": "SUN2000-10KTL-M0"
+                            },
+                            {
+                                "value": "429",
+                                "newvalue": "SUN2000-10KTL-M1"
+                            },
+                            {
+                                "value": "431",
+                                "newvalue": "SUN2000-10KTL-M2"
+                            },
+                            {
+                                "value": "332",
+                                "newvalue": "SUN2000-10KTL-USL0"
+                            },
+                            {
+                                "value": "333",
+                                "newvalue": "SUN2000-10KTL-USL0"
+                            },
+                            {
+                                "value": "321",
+                                "newvalue": "SUN2000-11.4KTL-USL0"
+                            },
+                            {
+                                "value": "322",
+                                "newvalue": "SUN2000-11.4KTL-USL0"
+                            },
+                            {
+                                "value": "3",
+                                "newvalue": "SUN2000-12KTL"
+                            },
+                            {
+                                "value": "417",
+                                "newvalue": "SUN2000-12KTL"
+                            },
+                            {
+                                "value": "420",
+                                "newvalue": "SUN2000-12KTL-M0"
+                            },
+                            {
+                                "value": "463",
+                                "newvalue": "SUN2000-12KTL-M1"
+                            },
+                            {
+                                "value": "432",
+                                "newvalue": "SUN2000-12KTL-M2"
+                            },
+                            {
+                                "value": "305",
+                                "newvalue": "SUN2000L-2KTL"
+                            },
+                            {
+                                "value": "304",
+                                "newvalue": "SUN2000L-3KTL"
+                            },
+                            {
+                                "value": "310",
+                                "newvalue": "SUN2000L-3KTL-CN"
+                            },
+                            {
+                                "value": "311",
+                                "newvalue": "SUN2000L-3KTL-CN-4G"
+                            },
+                            {
+                                "value": "303",
+                                "newvalue": "SUN2000L-3.68KTL"
+                            },
+                            {
+                                "value": "302",
+                                "newvalue": "SUN2000L-4KTL"
+                            },
+                            {
+                                "value": "308",
+                                "newvalue": "SUN2000L-4KTL-CN"
+                            },
+                            {
+                                "value": "309",
+                                "newvalue": "SUN2000L-4KTL-CN-4G"
+                            },
+                            {
+                                "value": "331",
+                                "newvalue": "SUN2000L-4.125KTL-JP"
+                            },
+                            {
+                                "value": "301",
+                                "newvalue": "SUN2000L-4.6KTL"
+                            },
+                            {
+                                "value": "330",
+                                "newvalue": "SUN2000L-4.95KTL-JP"
+                            },
+                            {
+                                "value": "300",
+                                "newvalue": "SUN2000L-5KTL"
+                            },
+                            {
+                                "value": "306",
+                                "newvalue": "UN2000L-5KTL-CN"
+                            },
+                            {
+                                "value": "307",
+                                "newvalue": "UN2000L-5KTL-CN-4G"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "0d248fb361aa4dd7923cafd7236de894",
+                        "name": "Status 1",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "OK"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "Standby"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "2-3",
+                                "newvalue": "Grid-connected"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "4-7",
+                                "newvalue": "Grid-connected normally"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "8-15",
+                                "newvalue": "Connection with derating due to power rationing"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "16-31",
+                                "newvalue": "Grid connection with derating due to internal causes"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "32-63",
+                                "newvalue": "Normal stop"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "64-127",
+                                "newvalue": "Stop due to faults"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "128-255",
+                                "newvalue": "Stop due to power rationing"
+                            },
+                            {
+                                "type": "IN_RANGE",
+                                "value": "256-511",
+                                "newvalue": "Shutdown"
+                            },
+                            {
+                                "type": "GREATER_OR_EQUAL",
+                                "value": "512",
+                                "newvalue": "Spot check"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "60ec2727b75047dc8cdfb59dab07f3aa",
+                        "name": "Status 2",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "DSP not collecting (disconnected - locked)"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "DSP not collecting (disconnected - unlocked)"
+                            },
+                            {
+                                "value": "2",
+                                "newvalue": "DSP not collecting (connected - locked)"
+                            },
+                            {
+                                "value": "3",
+                                "newvalue": "DSP not collecting (connected - unlocked)"
+                            },
+                            {
+                                "value": "4",
+                                "newvalue": "DSP collecting (disconnected - locked)"
+                            },
+                            {
+                                "value": "5",
+                                "newvalue": "DSP collecting (disconnected - unlocked)"
+                            },
+                            {
+                                "value": "6",
+                                "newvalue": "DSP collecting (connected - locked)"
+                            },
+                            {
+                                "value": "7",
+                                "newvalue": "DSP collecting (connected - unlocked)"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "6a5066d4761c4b11a1d92b9a91c9f0cc",
+                        "name": "Status 3",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "On-Grid (Off-Grid switch disable)"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "Off-Grid (Off-Grid switch disable)"
+                            },
+                            {
+                                "value": "2",
+                                "newvalue": "On-Grid (Off-Grid switch enable)"
+                            },
+                            {
+                                "value": "3",
+                                "newvalue": "Off-Grid (Off-Grid switch enable)"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "62c932c69e7e4dd6af1747f4a875e712",
+                        "name": "Time zone",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "GMT"
+                            },
+                            {
+                                "value": "-60",
+                                "newvalue": "GMT-1"
+                            },
+                            {
+                                "value": "60",
+                                "newvalue": "GMT+1"
+                            },
+                            {
+                                "value": "-120",
+                                "newvalue": "GMT-2"
+                            },
+                            {
+                                "value": "120",
+                                "newvalue": "GMT+2"
+                            },
+                            {
+                                "value": "-180",
+                                "newvalue": "GMT-3"
+                            },
+                            {
+                                "value": "180",
+                                "newvalue": "GMT+3"
+                            },
+                            {
+                                "value": "-240",
+                                "newvalue": "GMT-4"
+                            },
+                            {
+                                "value": "240",
+                                "newvalue": "GMT+4"
+                            },
+                            {
+                                "value": "-300",
+                                "newvalue": "GMT-5"
+                            },
+                            {
+                                "value": "300",
+                                "newvalue": "GMT+5"
+                            },
+                            {
+                                "value": "-360",
+                                "newvalue": "GMT-6"
+                            },
+                            {
+                                "value": "360",
+                                "newvalue": "GMT+6"
+                            },
+                            {
+                                "value": "-420",
+                                "newvalue": "GMT-7"
+                            },
+                            {
+                                "value": "420",
+                                "newvalue": "GMT+7"
+                            },
+                            {
+                                "value": "-480",
+                                "newvalue": "GMT-8"
+                            },
+                            {
+                                "value": "480",
+                                "newvalue": "GMT+8"
+                            },
+                            {
+                                "value": "-540",
+                                "newvalue": "GMT-9"
+                            },
+                            {
+                                "value": "540",
+                                "newvalue": "GMT+9"
+                            },
+                            {
+                                "value": "-600",
+                                "newvalue": "GMT-10"
+                            },
+                            {
+                                "value": "600",
+                                "newvalue": "GMT+10"
+                            },
+                            {
+                                "value": "-660",
+                                "newvalue": "GMT-11"
+                            },
+                            {
+                                "value": "660",
+                                "newvalue": "GMT+11"
+                            },
+                            {
+                                "value": "-720",
+                                "newvalue": "GMT-12"
+                            },
+                            {
+                                "value": "720",
+                                "newvalue": "GMT+12"
+                            },
+                            {
+                                "value": "780",
+                                "newvalue": "GMT+13"
+                            },
+                            {
+                                "value": "840",
+                                "newvalue": "GMT+14"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "triggers": [
+            {
+                "uuid": "9fc8fb1113ff473f843b5a4370ba23f5",
+                "expression": "last(/Template Huawei Solar Inverter - ModBus/sun2000.register-32064)>=last(/Template Huawei Solar Inverter - ModBus/sun2000.register-30075)",
+                "name": "Input power is at maximum",
+                "priority": "INFO",
+                "description": "Inverter is operating at its maximum rated power!"
+            }
+        ]
+    }
+}
