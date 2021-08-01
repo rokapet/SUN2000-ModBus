@@ -13,6 +13,6 @@
  - azimuth: The facing of your panels.
 
 ## Usage
-Add the config in userparams into the configuration of Zabbix Agent on a client, or on Zabbix Server.
-Create a trapper item in Zabbix, with the appropriate run schedule.
-Create a Zabbix client with the IP of your inverter, and assign the ModBus template to it.
+ - Add the config in userparams into the configuration of Zabbix Agent on a client, or on Zabbix Server.
+ - Create a trapper item in Zabbix, with the appropriate run schedule.
+ - Create a Zabbix client with the IP of your inverter, and assign the ModBus template to it.
