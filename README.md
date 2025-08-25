@@ -6,6 +6,8 @@ Huawei has taken the posibility for querying ModBus data over WiFi (at least ove
 
 Shame!
 
+Edit: It was longer time ago than I thought, it was firmware V200R001C00SPC117 in 2022 that brought the above disability.
+
 
 ## Original script taken from:
 [https://github.com/basking-in-the-sun2000/solar-logger](https://github.com/basking-in-the-sun2000/solar-logger)
